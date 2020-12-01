@@ -1,0 +1,48 @@
+.Nav {
+  &-List {
+    display: flex;
+  }
+  &-Item {
+    display: inline-block;
+    & + .Nav-Item {
+      margin-left: 4.5rem;
+    }
+    a {
+      position: relative;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      color: #fff;
+      transition: 0.3s linear;
+      font-weight: 500;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        opacity: 0;
+        transition: .3s ease;
+      }
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  .Nav {
+    &-Item {
+      & + .Nav-Item {
+        margin-left: 1.5rem;
+      }
+      a {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

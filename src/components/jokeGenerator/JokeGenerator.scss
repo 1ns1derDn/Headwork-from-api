@@ -1,0 +1,12 @@
+.Joke {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  &-Text {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+}
+
+

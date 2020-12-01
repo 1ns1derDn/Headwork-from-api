@@ -1,0 +1,45 @@
+.UserList {
+  position: relative;
+  z-index: 3;
+  max-width: 100%;
+  width: 100%;
+  &-Head {
+    display: flex;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    min-width: 720px;
+  }
+  &-Title {
+    font-size: 2.4rem;
+    text-align: left;
+  }
+  &-Name {
+    max-width: 330px;
+    min-width: 280px;
+    width: 100%;
+    padding-right: 2rem;
+  }
+  &-Gender {
+    max-width: 330px;
+    min-width: 100px;
+    width: 100%;
+    padding-right: 2rem;
+  }
+  &-Cupon {
+    max-width: 330px;
+    min-width: 100px;
+    width: 100%;
+    padding-right: 2rem;
+  }
+  &-Date {
+    max-width: 330px;
+    width: 100%;
+    padding-right: 2rem;
+  }
+}
+
+@media(max-width: 767px) {
+  .UserList {
+    overflow: scroll;
+  }
+}

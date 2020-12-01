@@ -1,0 +1,17 @@
+.UserListItem {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  min-width: 720px;
+  min-height: 80px;
+  padding: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+@media(max-width: 767px) {
+  .UserListItem  {
+    min-height: 60px;
+  }
+}

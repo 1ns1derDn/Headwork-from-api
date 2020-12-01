@@ -1,0 +1,51 @@
+.InputTran {
+  display: block;
+  &-Name {
+    display: inline-block;
+    font-size: 1.8rem;
+    margin-bottom: .4rem;
+  }
+  &-Inp {
+    height: 50px;
+    width: 100%;
+    border: .1rem solid #fff;
+    background-color: rgba($color: rgb(197, 197, 197), $alpha: .4);
+    border-radius: .5rem;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 1.8rem;
+    outline: none;
+    &::placeholder {
+      font-size: 1.8rem;
+      color: #fff;
+    }
+    &:focus {
+      border-width: 2px;
+      border-color: #000;
+      &::placeholder {
+        font-size: 0;
+      }
+    }
+  }
+  &.InputTran_Error {
+    .InputTran-Inp {
+      border: .1rem solid rgb(255, 0, 0);
+      box-shadow: .1rem .1rem 1rem rgb(255, 0, 0);
+    }
+  }
+
+  &-Error {
+    display: block;
+    height: 1em;
+    margin-top: 0.5rem;
+    color:  rgb(255, 0, 0);
+    font-size: 1.4rem;
+  }
+}
+
+@media(max-width: 767px) {
+  .InputTran-Inp {
+    height: 40px;
+  }
+}
+

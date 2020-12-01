@@ -1,0 +1,32 @@
+.Form {
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.FormTran {
+  max-width: 600px;
+  width: 100%;
+  padding: 4rem 3rem;
+  &-Inp {
+    margin-bottom: 1.5rem;
+  }
+  &-Chec {
+    margin-bottom: 3.4rem;
+  }
+  &-Box {
+    display: flex;
+    margin-bottom: 3.4rem;
+  }
+  &-Radio {
+    margin-right: 2rem;
+  }
+  &-RadioQuestion {
+    margin-bottom: 3rem;
+  }
+}
+
+@media(max-width: 767px) {
+  .FormTran {
+    padding: 2rem;
+  }
+}

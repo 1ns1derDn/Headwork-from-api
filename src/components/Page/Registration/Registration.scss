@@ -1,0 +1,58 @@
+.Intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 82px;
+  overflow-y: auto;
+  height: calc(100vh - 105px);
+  &-Inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  &-Box {
+    max-width: 600px;
+    width: 100%;
+  }
+  .Welcome {
+    margin-right: 3rem;
+  }
+}
+
+@media(max-width: 1024px) {
+  .Intro  {
+    &-Inner {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .Form {
+      max-width: 500px;
+    }
+    .Joke {
+      max-width: 500px;
+    }
+    .Intro-Box {
+      max-width: 500px;
+    }
+    .Welcome {
+      font-size: 4rem;
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media(max-width: 812px) {
+  .Intro {
+    align-items: flex-start;
+    padding: 55px 0;
+    .Welcome {
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+
+

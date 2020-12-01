@@ -1,0 +1,20 @@
+.ButtonTran {
+  cursor: pointer;
+  padding: .8rem 2rem;
+  text-align: center;
+  border: .2rem solid #fff;
+  background-color: rgba($color: rgb(197, 197, 197), $alpha: .4);
+  border-radius: .5rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #fff;
+  transition: 0.3s ease;
+  outline: none;
+  &:hover {
+    box-shadow: .5rem .5rem 1rem #fff;
+  }
+  &:focus {
+    border-width: 2px;
+    border-color: #000;
+  }
+}

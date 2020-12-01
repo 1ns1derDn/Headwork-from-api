@@ -1,0 +1,55 @@
+input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  &:focus + .RadioTran-Label {
+    &::before {
+      border: .2rem solid #000;
+    }
+  }
+  &:checked + .RadioTran-Label {
+    &::after {
+      display: block;
+    }
+  }
+}
+
+.RadioTran {
+  position: relative;
+  padding-left: 30px;
+  &-Label {
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #fff;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      cursor: pointer;
+      transform: translateY(-50%);
+    }
+    &::before {
+      width: 20px;
+      height: 20px;
+      border: .2rem solid #fff;
+      border-radius: 50%;
+      &:focus {
+        border-color: red;
+      }
+    }
+    &::after {
+      position: absolute;
+      display: none;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #fff;
+      left: 10px;
+      transform: translateY(-50%) translateX(-50%);
+    }
+  }
+}
